@@ -1,6 +1,6 @@
 context:
   name: textual-autocomplete
-  version: "2.1.0b0"
+  version: "3.0.0a13"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name | replace("-", "_") }}/${{ name | replace("-", "_") }}-${{ version }}.tar.gz
-  sha256: ba31da6e9b77e4c35323c267f958f0b90e1c2ddeca9c825c7d6c29d4d33893ce
+  sha256: db5a4ae956dd7d6dece53f7f695e97f2ab75819dd96b8a1c064ec5966b3ab113
 
 build:
   noarch: python
@@ -19,10 +19,10 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - poetry-core
+    - hatchling
   run:
     - python >=${{ python_min }}
-    - textual >=0.14.0,<1.0
+    - textual >=0.86.2,<1.0
     - typing-extensions >=4.5.0,<5.0
 
 tests:
