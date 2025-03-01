@@ -1,6 +1,6 @@
 context:
   name: textual-autocomplete
-  version: "3.0.0a13"
+  version: "4.0.0a0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name | replace("-", "_") }}/${{ name | replace("-", "_") }}-${{ version }}.tar.gz
-  sha256: db5a4ae956dd7d6dece53f7f695e97f2ab75819dd96b8a1c064ec5966b3ab113
+  sha256: c2c8e680e0ef1607dbcaac56de3b07f3c242f33d1365038284b82272cef00076
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
 tests:
   - python:
       imports:
-      - textual_autocomplete
+        - textual_autocomplete
       pip_check: true
       python_version: ${{ python_min }}.*
 
