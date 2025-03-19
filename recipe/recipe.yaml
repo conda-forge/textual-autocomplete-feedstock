@@ -34,7 +34,7 @@ tests:
 
 about:
   homepage: https://github.com/darrenburns/textual-autocomplete
-  summary: 'Textual-autocomplete is a Python library for creating dropdown autocompletion menus in Textual applications'
+  summary: 'Easily add autocomplete dropdowns to your Textual apps.'
   description: |
     textual-autocomplete is a Python library for creating dropdown autocompletion menus in Textual applications, allowing users to quickly select from a list of suggestions as they type. textual-autocomplete supports Textual version 0.14.0 and above.
   license: MIT
