@@ -1,6 +1,6 @@
 context:
   name: textual-autocomplete
-  version: "4.0.4"
+  version: "4.0.5"
 
 package:
   name: ${{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name | replace("-", "_") }}/${{ name | replace("-", "_") }}-${{ version }}.tar.gz
-  sha256: 0969987b90a53c1f75753dfe3ad2c7ea0d974b5839dc2a00a2d332c000057871
+  sha256: db8066fc7d87c74afd08367f8fc2144bcec5ddbdea63a637249754e9d1fd8755
 
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
